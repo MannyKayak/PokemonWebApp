@@ -7,6 +7,8 @@ export default function Navbar() {
             <Link href="/pokemonList">Pokemon List</Link>
             <Link href="/pokemonList">Rules</Link>
             <Link href="/pokemonList">Account</Link>
+            <Link href="/login">Login</Link>
+            <Link href="/registration">Register</Link>
         </div>
     );
 }
