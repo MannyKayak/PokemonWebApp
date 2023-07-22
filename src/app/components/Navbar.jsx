@@ -1,36 +1,22 @@
 "use client";
 
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import { signIn, signOut, useSession, getProviders } from "next-auth/react" 
+import Title from "./Title";
+import Image from "next/image";
+import Pokeball from "./Pokeball";
 
 export default function Navbar() {
-    const isUserLoggedIn = true; 
-    const [providers, setProviders] = useState(null);
-
-    useEffect (() => {
-        const setProviders = async () => {
-            const response = await getProviders()
-        }
-    }, [])
-
+   
     return (
-        <nav>
-            <Link href="/">home</Link>
-            <Link href="/pokemonList">Pokemon List</Link>
-            <Link href="/pokemonList">Rules</Link>
-            <Link href="/pokemonList">Account</Link>
-            <div>
-                {isUserLoggedIn ? (
-                    <div>
-                        <Link href="/makeYourTeam">Make Your Team</Link>
-                    </div>
-                ) : (<></>)}
-                <button type="button" onClick={signOut}>
-                    Sign Out
-                </button>
-                {/* will add the link to the profile of the user*/}
+        <div>
+            <div className="bg-orange-200 bg-[url(/sfondo_container.jpg)] bg-cover bg-blend-soft-light flex flex-col">
+                <Title title="Pokemon Master"/>
+                <div className="flex flex-row justify-center items-center gap-3  md:visible bg-cover">
+                    <Pokeball href="/" name="Home" />
+                    <Pokeball href="/pokemonList" name="Poke-list" />
+                    <Pokeball href="/pokemonList" name="rules" />
+                    <Pokeball href="/pokemonList" name="your team" />
+                </div>
             </div>
-        </nav>
+        </div>
     );
-}
+}  

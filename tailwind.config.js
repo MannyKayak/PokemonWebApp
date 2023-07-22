@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-slow': 'bounce 1.5s linear infinite'
+      },
+      fontFamily: {
+        'lilita' : ['Lilita One', 'sans'],
+        'mochiy': ['Rubik Mono One']
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

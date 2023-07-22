@@ -11,7 +11,7 @@ import Feed from './components/Feed';
 export default function Home() {
   return (
       <section>
-          <h1>Pokemon Master</h1>
+          <h1 className=' to-indigo-800 font-sans '>Pokemon Master</h1>
           <h3>Became a pokemon trainer, chose your team and start the jurney!</h3>
           <></>
           <Feed/>
