@@ -1,7 +1,7 @@
 //"use client"
 // fetch api
 const getPokeData = async () => {
-    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20");
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=152");
     return res.json()
   }
 

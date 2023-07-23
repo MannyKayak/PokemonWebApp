@@ -14,7 +14,7 @@ export default function Navbar() {
                     <Pokeball href="/" name="Home" />
                     <Pokeball href="/pokemonList" name="Poke-list" />
                     <Pokeball href="/pokemonList" name="rules" />
-                    <Pokeball href="/pokemonList" name="your team" />
+                    <Pokeball href="/yourTeam" name="your team" />
                 </div>
             </div>
         </div>

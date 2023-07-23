@@ -5,7 +5,7 @@ export default function Pokeball(link) {
     return (
         <Link href={link.href} className="flex flex-col items-center">
             <Image width="60" height="60" src="/pokeball_icon.svg" alt="pokeball" className="hover:animate-bounce-slow"></Image>
-            <span className="text-center text-sky-700 font-extrabold font-lilita uppercase">{link.name}</span>
+            <span className="text_utility">{link.name}</span>
         </Link>
     )
 }

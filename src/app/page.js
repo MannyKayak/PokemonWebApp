@@ -1,20 +1,15 @@
-import Image from 'next/image'
-import Feed from './components/Feed';
+import Image from "next/image";
+import Feed from "./components/Feed";
 
-// cosa deve fare questa app, innanzitutto deve mostrare le squadre che ci sono disponibili
-// ogni squadra deve essere visitabile
-// ci deve essere un sign-in/sign-up con form 
-// my account page dove posso vedere le stat dei miei pokemon
-// ci deve essere una chat e la possibilità di sfidare altri allenatori
-// ci deve essere una lista dei pokemon disponibili e ogni pokemon deve essere clikkabile per vedere le sue stat.
-// print a title and a subtitle, something like became a Pokemon trainer! Catch 'em all...
+// TODO: HOME PAGE - show the cards of all the teams -> call to a database and fetch the data.
 export default function Home() {
   return (
-      <section>
-          <h1 className=' to-indigo-800 font-sans '>Pokemon Master</h1>
-          <h3>Became a pokemon trainer, chose your team and start the jurney!</h3>
-          <></>
-          <Feed/>
-      </section>
+    <div className="flex flex-col h-full ">
+      <p className="font-lilita text-sky-700 uppercase text-center text-xl mt-9 ">
+        Are you ready to become a Poke-Master? <br /> Pick your fav pokemon and
+        start the battle!
+      </p>
+      <div className="h-[500px] border-2 mx-20 my-7"></div>
+    </div>
   );
 }
