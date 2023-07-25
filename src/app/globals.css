@@ -4,19 +4,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lilita+One");
 @import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One");
 
-root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 .sky_gradient {
   @apply bg-gradient-to-tr from-sky-900 from-35% via-sky-600 via-50%  to-sky-400 to-70% bg-clip-text text-transparent;
 }
@@ -36,13 +23,3 @@ input {
 .text_utility {
   @apply text-center text-sky-700 font-extrabold font-lilita uppercase;
 }
-/*
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      
-    )
-    rgb(var(--background-start-rgb));
-}
-
-*/
